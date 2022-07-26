@@ -9,7 +9,7 @@ namespace Library_Management_System
        
         public void news()
         {
-            Console.WriteLine("[1] available newspaper");
+            Console.WriteLine("Enter 1 for Show all  newspapers list");
 
             int x  = Convert.ToInt32(Console.ReadLine());
 

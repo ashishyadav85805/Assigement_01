@@ -7,11 +7,7 @@ namespace Library_Management_System
 {
     internal class Addition : IEnumerable
     {
-
-
         private List<Book> books;
-
-
         public void ADD(Book NewBook)
         {
             if (books == null)
@@ -21,8 +17,6 @@ namespace Library_Management_System
             }
             books.Add(NewBook);
         }
-
-
 
         public IEnumerator GetEnumerator()
         {
@@ -38,9 +32,6 @@ namespace Library_Management_System
         }
 
     }
-
-
-
     internal class Book
     {
         public int ID { get; set; }

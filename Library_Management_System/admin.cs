@@ -8,10 +8,11 @@ namespace Library_Management_System
     {
         public void adm()
         {
-            Console.WriteLine("Select Any One >>>");
+            Console.WriteLine("                    Menu             ");
             Console.WriteLine();
-            Console.WriteLine("What do you want to manage today?");
-            Console.WriteLine("[1] for Books, [2] for Newspaper ");
+            Console.WriteLine("     <<<<<< Select Any One >>>>>>>      ");
+            Console.WriteLine();
+            Console.WriteLine(" Ebter 1 for Books  <<<>>>> Enter 2 for Newspaper ");
 
             admin a = new admin();
 
@@ -19,6 +20,7 @@ namespace Library_Management_System
             int y = int.Parse(LibrarianChoice);
 
             Books b = new Books();
+            Newspaper p = new Newspaper();
 
             if (y == 1)
             {
@@ -26,7 +28,7 @@ namespace Library_Management_System
             }
             else
             {
-                a.adm();
+                p.news();
 
             }
 

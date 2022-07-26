@@ -9,15 +9,14 @@ namespace Library_Management_System
         public void B()
         {
 
-            Console.WriteLine("[1] for Adding ");
-            Console.WriteLine("[2] for Removing ");
-            Console.WriteLine("[3] for Show  books List ");
-
+            Console.WriteLine("Enter 1 for Adding ");
+            Console.WriteLine();
+            Console.WriteLine("Enter 2 for Removing ");
+            Console.WriteLine();
+            Console.WriteLine("Enter 3 for Show  books List ");
             Addition t = new Addition();
-
             string input = Console.ReadLine();
             int z = int.Parse(input);
-
             if (z == 1)
             {
                 Console.WriteLine("How Many Books You Want to Add Now");

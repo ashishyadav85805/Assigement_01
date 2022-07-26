@@ -5,36 +5,31 @@ using System.Text;
 
 namespace Library_Management_System
 {
-    
-        internal class News1 :IEnumerable
+    internal class News1 : IEnumerable
+    {
+        public static List<Paper> Newspaper = new List<Paper>
         {
-            public static List<Paper> Newspapers = new List<Paper>
-        {
-            new Paper{Title="Times Of India" },
+            new Paper{Title="The Hindu" },
             new Paper{Title="Economics Times"  },
             new Paper{Title="Hindustan Times" },
+            new Paper{Title="Times of India" },
         };
 
-            public IEnumerator GetEnumerator()
+        public IEnumerator GetEnumerator()
+        {
+            if (Newspaper != null)
             {
-                if (Newspapers != null)
-                {
-                    return Newspapers.GetEnumerator();
-                }
-                else
-                {
-                    return null;
-                }
-
+                return Newspaper.GetEnumerator();
+            }
+            else
+            {
+                return null;
             }
 
-
         }
-
-
-        public class Paper
-        {
-            public string Title { get; set; }
-        }
-    
+    }
+    public class Paper
+    {
+        public string Title { get; set; }
+    }
 }

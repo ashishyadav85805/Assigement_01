@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Library_Management_System
 {
-    internal class Books
+    internal class Books:Newspaper
     {
         public void B()
         {
@@ -41,5 +41,7 @@ namespace Library_Management_System
 
             }
         }
+
+        
     }
 }

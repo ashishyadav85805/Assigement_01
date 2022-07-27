@@ -19,7 +19,7 @@ namespace Library_Management_System
 
             if (val == 1)
             {
-                StuBorrow.BorrowBook();
+                stuBorrow.BorrowBook();
             }
             else if (val == 2)
             {
@@ -28,7 +28,7 @@ namespace Library_Management_System
 
             else
             {
-                Console.WriteLine("Invalid option ");
+                Console.WriteLine("Enter the Invalid option ");
             }
 
         }
@@ -43,7 +43,7 @@ namespace Library_Management_System
 
             if (value == 1)
             {
-                StuBorrow.ReturnBook();
+                stuBorrow.ReturnBook();
             }
             else if (value == 2)
             {
@@ -51,7 +51,7 @@ namespace Library_Management_System
             }
             else
             {
-                Console.WriteLine("Invalid option");
+                Console.WriteLine("Enter the valid option");
             }
         }
     }

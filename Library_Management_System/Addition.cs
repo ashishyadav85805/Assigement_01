@@ -32,8 +32,9 @@ namespace Library_Management_System
         }
 
     }
-    internal class Book
+     public class Book
     {
+        public Boolean IsBorrowed { get; set; }
         public int ID { get; set; }
         public string Name { get; set; }
     }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Library_Management_System
 {
-    internal class stuBorrow : students
+    internal class stuBorrow : students 
     {
         public static void BorrowBook()
         {
@@ -46,7 +46,7 @@ namespace Library_Management_System
             {
                 if (b.ID.Equals(returning))
                 {
-                    if (b.IsBorrowed == true)
+                    if (b.IsBorrowed  == true)
                     {
                         b.IsBorrowed = false;
 
@@ -64,6 +64,7 @@ namespace Library_Management_System
 
             }
         }
+
 
 
     }
